@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15 -->
+<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./ White Diamond _files/6eae353a0d"></script><script src="./ White Diamond _files/nr-1167.min.js"></script><script src="./ White Diamond _files/osd.js"></script><script src="./ White Diamond _files/f(2).txt" id="google_shimpl"></script><script src="./ White Diamond _files/496731427340901" async=""></script><script async="" src="./ White Diamond _files/fbevents.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"6eae353a0d",applicationID:"20127417"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="csrf-token" content="lWVDo3ErpSuzViRA9pdAuYKDWaJXaf7uXmd5lxub">
+<title>Pixilart - White Diamond - Pixel Art by PipocaDeSalto </title>
+<meta name="description" content="This pixel art can be made out of wallpaper! 
+A friend sent me the original image so I decided to do it in pixel art.
+
+By PipocaDeSalto
+
+DeviantArt: https://www.deviantart.com/pipocadesalto
+
+Original Image Credits: The due credits of the original image go to Riukius! ♥️♥️
+
+LINKS FOR PAGE: cdnb.artstation.com/p/assets/i…
+
+riukius.artstation.com
+
+www.reddit.com/user/Riukius - Pixilart, Free Online Pixel Drawing Application!">
+<link rel="canonical" href="http://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15" itemprop="url">
+<meta name="keywords" content="pixilart, pixelart, pixel art, pixel, art, drawing, pixel drawing, online drawing, pixel drawing online, make pixel art, make pixil art, pixil, social pixel">
+<meta name="copyright" content="Copyright 2020 Pixilart, LLC">
+
+<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+<link href="./ White Diamond _files/css(1)" rel="stylesheet">
+<link href="./ White Diamond _files/font-feather.css" rel="stylesheet" type="text/css">
+<link href="./ White Diamond _files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<meta property="og:title" content="Pixilart - White Diamond - Pixel Art ">
+<meta property="og:site_name" content="Pixilart">
+<meta property="og:description" content="This pixel art can be made out of wallpaper! 
+A friend sent me the original image so I decided to do it in pixel art.
+
+By PipocaDeSalto
+
+DeviantArt: https://www.deviantart.com/pipocadesalto
+
+Original Image Credits: The due credits of the original image go to Riukius! ♥️♥️
+
+LINKS FOR PAGE: cdnb.artstation.com/p/assets/i…
+
+riukius.artstation.com
+
+www.reddit.com/user/Riukius">
+<meta name="twitter:title" content="White Diamond - Pixel Art">
+<meta name="twitter:description" content="This pixel art can be made out of wallpaper! 
+A friend sent me the original image so I decided to do it in pixel art.
+
+By PipocaDeSalto
+
+DeviantA...">
+<meta name="twitter:image:src" content="https://art.pixilart.com/55339219773fca3.png">
+<meta property="og:image:width" content="637">
+<meta property="og:image:height" content="1120">
+<meta property="og:image" content="https://art.pixilart.com/55339219773fca3.png">
+
+<meta property="fb:app_id" content="421508937871104">
+<meta property="og:url" content="http://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15">
+<meta property="og:type" content="application">
+<meta property="og:site_name" content="Pixilart">
+<meta property="fb:admins" content="244937025609196">
+
+<meta name="tz" content="2020-04-07 11:23:20">
+<meta name="is_restricted" content="1">
+<meta name="user_meta" content="{&quot;first_name&quot;:&quot;&quot;,&quot;last_name&quot;:&quot;&quot;,&quot;username&quot;:&quot;Anonymous&quot;,&quot;profile_picture&quot;:&quot;\/images\/user\/default_profile.png?ver=2.1&quot;,&quot;is_anon&quot;:true,&quot;is_online&quot;:1428405800}">
+<meta name="check_logged_in" content="">
+
+
+
+<script src="./ White Diamond _files/pixshop.js" defer=""></script>
+<script src="./ White Diamond _files/app.js" defer=""></script>
+
+<script src="./ White Diamond _files/analytics.js"></script>
+<script async="" src="./ White Diamond _files/f(3).txt"></script> <link href="./ White Diamond _files/app.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.pixilart.com/images/favicon/apple-touch-icon.png?v=gw6qNMPWjl2">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.pixilart.com/images/favicon/favicon-32x32.png?v=gw6qNMPWjl2">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.pixilart.com/images/favicon/favicon-16x16.png?v=gw6qNMPWjl2">
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.pixilart.com/images/favicon/android-chrome-192x192.png?v=gw6qNMPWjl2">
+<link rel="manifest" href="https://www.pixilart.com/manifest.json?v=gw6qNMPWjl5">
+<link rel="mask-icon" href="https://www.pixilart.com/images/favicon/safari-pinned-tab.svg?v=gw6qNMPWjl2" color="#e74d3c">
+<meta name="apple-mobile-web-app-title" content="Pixilart">
+<meta name="application-name" content="Pixilart">
+<meta name="theme-color" content="#FFFFFF">
+<script>
+        var _cdn = 'https://cdn.pixil.digital'; //https://cdn.pixilart.com';
+        var _cdn_art = 'https://art.pixilart.com'; //'https://art.pixilart.com';
+        var do_cdn = 'https://pixil.nyc3.digitaloceanspaces.com'; // 'https://pixil.nyc3.digitaloceanspaces.com'
+    </script>
+<meta name="google-site-verification" content="XLfESLCOwTg9ekpy5ozJHe2ooDxloKDFiSc5xeeheJo">
+<meta name="msvalidate.01" content="F66B99A94EB4AB287B2EFFB912F599AB">
+<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Website",
+          "name": "Pixilart",
+          "url": "http://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15",
+          "sameAs": [
+            "https://www.facebook.com/pixilart",
+            "https://www.instagram.com/pixilart",
+            "https://www.twitter.com/pixil_art"
+          ],
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.pixilart.com/search?term={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '496731427340901'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=496731427340901&ev=PageView&noscript=1"
+    /></noscript>
+<style type="text/css">
+.append-art-selection {
+	padding: 10px 10px 10px 10px;
+	max-height: 500px;
+	min-height: 250px;
+	overflow-y: auto;
+	background-color: rgba(229,236,241,.5);
+	border-radius: 4px;
+}
+.append-art-selection img {
+	background-color: #FFF;
+}
+.append-art-selection img:hover {
+	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+</style><style type="text/css">
+.image-selection-container {
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+}
+.image-selection-container .image-select-wrapper {
+	position: relative;
+}
+.image-hover-above {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.image-selection-container .image-select-wrapper .selection {
+	position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px dashed #FFF;
+    z-index: 2;
+    overflow: hidden;
+}
+.image-selection-container .image-select-wrapper .selection .ft {
+	color: #FFF;
+	opacity: 0.5;
+}
+.image-selection-container .image-select-wrapper .image-placementer {
+	position: absolute;
+    z-index: 3;
+}
+</style><link rel="preload" href="./ White Diamond _files/f(4).txt" as="script"><script type="text/javascript" src="./ White Diamond _files/f(4).txt"></script><link rel="preload" href="./ White Diamond _files/f(5).txt" as="script"><script type="text/javascript" src="./ White Diamond _files/f(5).txt"></script></head><body class="sidebar-always image-dk">
+<div id="app" style="height: auto !important;"><nav class="navbar navbar-custom fixed-top navbar-expand-md navbar-light navbar-boxs"><div class="container max text-center"><div class="left full d-flex"><button type="button" class="home-nav-btn btn btn-light bt-light-dk btn-menu mr-3"><i aria-hidden="true" class="ft ft-icon-menu"></i></button> <ul class="navbar-nav lf left-align d-none d-lg-block"><li class="nav-item nav-icon-inline mr-2"><a href="https://www.pixilart.com/" class="nav-link"><i aria-hidden="true" class="ft ft-icon-home f-md"></i></a></li></ul> <a href="https://www.pixilart.com/" class="navbar-brand d-md-none full"><img src="./ White Diamond _files/logo_pixilart_simple_black.png" alt="Pixilart" class="pp"></a> <form id="navbar-search-form" action="https://www.pixilart.com/search" class="form-inline search-navbar-wrapper rl full"><input name="term" id="search-input" autocomplete="off" type="search" placeholder="Search.." aria-label="Search" class="form-control search-form-input full"> <button type="submit" class="search-button d-flex justify-content-center align-items-center"><i aria-hidden="true" class="ft ft-icon-search mr-1"></i></button> <div class="dropdown full"><div aria-labelledby="search-dropdown" class="dropdown-menu cttop search-dropdown-wrapper"><div class="row"><!----> <!----></div> <div class="p-3" style="display: none;"><div><span><div class="bar-loader"></div></span></div></div> <div class="row"><div class="col-sm-12 mt-2"><a href="https://www.pixilart.com/search?term=" class="px-3 pt-3 pb-2 brt d-ib full color-black">Search all results for ""</a></div></div></div></div></form> <button type="button" class="btn btn-light bt-light-dk search-nav-btn btn-menu ml-3 d-md-none"><i aria-hidden="true" class="ft ft-icon-search"></i></button></div> <div class="center full d-none d-md-block"><a href="http://www.pixilart.com/" class="navbar-brand"><img src="./ White Diamond _files/logo-plain-lg.png" alt="Pixilart" height="30px" class="pp"></a></div> <div class="right full d-none d-md-inline"><ul class="navbar-nav rt right-align"><li class="nav-item nav-icon-inline mr-1 d-flex align-items-center"><a href="https://www.pixilart.com/draw" class="nav-link f-lg navbar-drawing up"><i aria-hidden="true" class="ft ft-icon-edit-2 mr-1"></i> <span class="f-sm ttu">Start Drawing</span></a></li> <li class="nav-item nav-icon-inline hide-tb"><a href="https://www.pixilart.com/comics" class="nav-link"><i aria-hidden="true" class="ft ft-icon-book-open"></i> <span class="f-sm ttu item-text">Comics</span></a></li> <li class="nav-item nav-icon-inline hide-tb"><a href="https://www.pixilart.com/gallery" class="nav-link"><i aria-hidden="true" class="ft ft-icon-image"></i> <span class="f-sm ttu item-text">Gallery</span></a></li> <li class="nav-item nav-icon-inline hide-tb"><a href="https://www.pixilart.com/shop" class="nav-link"><i aria-hidden="true" class="ft ft-icon-shopping-cart"></i> <span class="f-sm ttu item-text">Shop</span></a></li> <li class="nav-item nav-icon-inline  d-flex  "><a href="https://www.pixilart.com/signup" class="login-acton color-black nav-link f-lg"><span><i aria-hidden="true" class="ft ft-icon-user mr-1"></i></span> <span class="f-sm ttu">
+			Login / Sign up
+		</span> <!----></a></li></ul></div></div></nav> <div class="sidebar-cancel-wrapper" style="display: none;"></div> <aside class="app-nav" style="top: 60px; display: block; left: -275px;"><div class="app-nav-wrapper sb" style="max-height: calc(100% - 60px);"><div class="user-setup"><div class="d-flex justify-content-center pt-3 pb-4 text-center"><div class="sidebar-new-user-section"><img src="./ White Diamond _files/default_profile.png" width="80px" alt="login/sign up" class="profile-image circle"> <div class="mt-2 f-lg"><a href="https://www.pixilart.com/signup" class="d-block login-acton color-black"><!----> <span>
+			Login / Sign up
+		</span> <span><div class="row f-sm color-gray justify-content-center"><div class="col-sm-8">
+                    Join the largest pixel art community
+                </div></div></span></a></div></div></div></div> <ul class="app-nav-list mb-0"><li class="d-block d-md-none"><a href="https://www.pixilart.com/draw" class="bg-drawing color-white"><i aria-hidden="true" class="ft ft-icon-edit-2"></i> Start Drawing
+</a></li> <li class="d-block d-md-none"><div class="divider"></div></li> <li><a href="https://www.pixilart.com/"><i aria-hidden="true" class="ft ft-icon-home"></i> Home
+</a></li> <li><a href="https://www.pixilart.com/gallery" class="active"><i aria-hidden="true" class="ft ft-icon-image"></i> Gallery
+</a></li> <li><a href="https://www.pixilart.com/digital"><i aria-hidden="true" class="ft ft-icon-upload"></i> Uploaded
+</a></li> <li><a href="https://www.pixilart.com/comics"><i aria-hidden="true" class="ft ft-icon-book-open"></i> Comics
+</a></li> <li><a href="https://www.pixilart.com/online" class="d-none d-lg-block  "><i aria-hidden="true" class="ft ft-icon-users"></i> Online
+</a></li> <li><a href="https://www.pixilart.com/contests"><i aria-hidden="true" class="ft ft-icon-award"></i> Contests
+</a></li> <li><a href="https://www.pixilart.com/groups"><i aria-hidden="true" class="ft ft-icon-users"></i> Groups
+</a></li> <li><a href="https://www.pixilart.com/requests"><i aria-hidden="true" class="ft ft-icon-check-square"></i> Requests
+</a></li> <li><a href="https://www.pixilart.com/forum"><i aria-hidden="true" class="ft ft-icon-message-circle"></i> Forums
+</a></li> <li><div class="divider"></div></li> <li><a href="https://www.pixilart.com/shop"><i aria-hidden="true" class="ft ft-icon-shopping-cart"></i> Shop
+<div class="shop-cart-count badge badge-primary float-right" style="display: none;">
+	0
+</div></a></li> <li><div class="divider"></div></li></ul> <ul class="app-nav-list-small mb-0"><li><a href="https://www.pixilart.com/challenges" class="active">
+Challenges
+</a></li> <li><a href="https://www.pixilart.com/tutorials" class="active">
+Tutorials
+</a></li> <li><a href="https://www.pixilart.com/help" class="active">
+Help
+</a></li> <li><a href="https://www.pixilart.com/about" class="active">
+About
+</a></li> <li><a href="https://www.pixilart.com/help/contact" class="active">
+Contact Us
+</a></li> <li><a href="https://www.pixilart.com/mobile" class="active">
+Mobile App
+</a></li> <li><a href="https://www.pixilart.com/help/parents" class="active">
+Parents &amp; Teachers
+</a></li> <li><a href="https://www.pixilart.com/privacy" class="active">
+Privacy Policy
+</a></li> <li><a href="https://www.pixilart.com/terms" class="active">
+Terms of Use
+</a></li> <li><a href="https://www.pixilart.com/shop/status" class="active">
+Shop Order Lookup
+</a></li> <li><div class="divider"></div></li> <li class="norm">
+Copyright 2020 Pixilart, LLC
+</li> <li><div class="divider"></div></li></ul> <ul class="app-nav-list mb-0"><li><div class="divider"></div></li> <li><div class="social-media-sidebar d-flex text-center justify-content-around"><a href="https://www.facebook.com/pixilart"><i class="fa fa-facebook"></i></a> <a href="https://www.instagram.com/pixilart"><i class="fa fa-instagram"></i></a> <a href="https://www.twitter.com/pixil_art"><i class="fa fa-twitter"></i></a> <a href="https://www.youtube.com/c/pixilart?sub_confirmation=1"><i class="fa fa-youtube-play"></i></a></div></li></ul></div></aside> <main class="py-4 nav-t main-content ignore-py " style="height: auto !important;"><div class="container image-page-template rep" style="height: auto !important;"><div class="loading-takover page abs"><!----></div> <div class="image-template-wrapper" style="height: auto !important;"><div style="height: auto !important;"><div class="row image-row" style=""><div class="col-sm-12 col-md-12 col-lg-8 col-xl-9 image-display-wrapper sb art-image"><div class="image-container-main rl"><a href="https://www.pixilart.com/art/hilda-pixel-art-1c41fc8aa1caaee" class="control-item next"><i aria-hidden="true" class="ft ft-icon-arrow-left"></i></a> <a href="https://www.pixilart.com/art/widowmaker-pixel-art-92fbb0df9de165f" class="control-item previous"><i aria-hidden="true" class="ft ft-icon-arrow-right"></i></a> <img src="./ White Diamond _files/55339219773fca3.png" alt="White Diamond - Pixel Art" class="pp"> <!----></div></div> <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 image-details-wrapper sb"><!----> <div class="pb-3 pt-3 pt-lg-3" style="height: auto !important;"><div class="row"><div class="col-10 col-sm-10"><div class="d-flex align-items-center"><div class="mr-3"><a href="https://www.pixilart.com/pipocadesalto" class="io profile-right rl"><div id="e18" class="username-image"><span><img src="./ White Diamond _files/34ebe5fe9176c89.png" class="profile-image circle medium"> <span class="is-online"></span></span></div></a></div> <div class="full nlh ofh"><div><a href="https://www.pixilart.com/pipocadesalto"><span id="e19" class="username-com color-black"><span>PipocaDeSalto <span class="user-username color-gray">@PipocaDeSalto</span></span></span></a> <div><time datetime="Sat Aug 03 2019 22:44:00 GMT+0200 (Mitteleuropäische Sommerzeit)" title="2019-08-03 20:44:00" class="time-ago">8 months ago</time></div></div></div></div></div> <div class="col-2 col-sm-2 d-flex justify-content-center md-just-right sm-just-center"><div class="float-right"><div class="dropdown"><a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#" role="button" id="dropdown-art" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-white dropdown-toggle white hide-carrot"><i aria-hidden="true" class="ft ft-icon-more-vertical"></i></a> <div aria-labelledby="dropdown-art" class="dropdown-menu dropdown-menu-right"><a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#" class="dropdown-item">
+	Report
+</a> <!----> <!----></div></div></div></div></div> <!----> <!----> <!----> <div class="image-title-desc mt-3"><div class="row"><div class="col-12"><div class="mt-1 full ofh"><div class="full d-flex align-items-center justify-content-between mb-2"><h2 class="f-lg ftnm lbld mb-0">White Diamond - Pixel Art</h2> <!----></div> <span><p class="mb-0"><span class="">This pixel art can be made out of wallpaper! 
+A friend sent me the original image so I decided to do it in pixel art.
+By PipocaDeSalto
+DeviantArt: <span class="wt"><a href="https://www.deviantart.com/pipocadesalto" class="outcome-link outcome-link-url" target="_blank" rel="nofollow noopener noreferrer">deviantart.com/pipocadesalto</a>
+Original</span> Image Credits: The due credits of the original image go to Riukius! ♥️♥️
+LINKS FOR PAGE: <span class="wt"><a href="http://cdnb.artstation.com/p/assets/i" class="outcome-link outcome-link-url" target="_blank" rel="nofollow noopener noreferrer">cdnb.artstation.com/p/assets/i</a>…
+<a href="http://riukius.artstation.com/" class="outcome-link outcome-link-url" target="_blank" rel="nofollow noopener noreferrer">riukius.artstation.com</a>
+<a href="http://www.reddit.com/user/Riukius" class="outcome-link outcome-link-url" target="_blank" rel="nofollow noopener noreferrer">reddit.com/user/Riukius</a></span></span></p></span> <!----> <!----></div> <!----></div></div></div> <div class="stats-wrapper mt-3"><div class="d-flex align-items-center justify-content-between"><div class="full"><span class="f-ss color-gray">
+									109 views 
+								</span> <span><i aria-hidden="true" class="ft ft-icon-minus"></i></span> <a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#" class="likes-appened-wrapper"><span class="f-ss color-gray">18 likes</span></a></div> <div class="btn-wrapper d-flex align-items-center justify-content-between"><button data-toggle="tooltip" data-placement="top" title="Replay" class="btn btn-light bg-brd bg-gray-dk mr-1"><i aria-hidden="true" class="fa fa-play-circle"></i></button> <div class="btn btn-light bg-brd bg-gray-dk mr-1" data-toggle="tooltip" data-placement="top" title="Repost" style="display: none;"><i class="ft ft-icon-repeat"></i> <!----></div> <button title="L to like" class="btn btn-light bg-brd bg-gray-dk nowrap"><span><span><i aria-hidden="true" class="ft ft-icon-heart mr-1"></i> Like
+										</span></span></button></div></div></div> <div class="tab-wrapper mt-2" style="height: auto !important;"><div class="d-flex tab-header text-center"><a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#" class="tab-menu-item active">
+								Details
+							</a> <a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#" class="tab-menu-item ">
+								Comments (0)
+							</a> <div class="dropdown dropdown-share hide-carrot tab-menu-item d-none d-xl-block hide-cm-lg"><button type="button" id="dropdown-share" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="hide-carrot f-sm f-nm btn-light"><i aria-hidden="true" class="ft ft-icon-share-2"></i> <span class="pl-2">Share</span></button> <div aria-labelledby="dropdown-share" class="dropdown-menu text-left dropdown-menu-right"><div class="share-items-wrapper"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15&amp;title=White%20Diamond%20-%20Pixel%20Art" class="dropdown-item facebook"><i aria-hidden="true" class="fa fa-facebook"></i> <span class="text ml-2">Facebook</span></a> <a target="_blank" href="https://twitter.com/intent/tweet?text=White%20Diamond%20-%20Pixel%20Art%20https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15&amp;hashtags=pixilart,pixelart" class="dropdown-item twitter"><i aria-hidden="true" class="fa fa-twitter"></i> <span class="text ml-2">Twitter</span></a> <a target="_blank" href="https://www.reddit.com/submit?url=https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15" class="dropdown-item reddit"><i aria-hidden="true" class="fa fa-reddit-alien"></i> <span class="text ml-2">Reddit</span></a> <a target="_blank" href="http://pinterest.com/pin/create/bookmarklet/?media=https://art.pixilart.com/55339219773fca3.png&amp;url=https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15&amp;is_video=false&amp;description=This%20pixel%20art%20can%20be%20made%20out%20of%20wallpaper!%20A%20friend%20sent%20me%20the%20original%20image%20so%20I%20decided%20to%20do%20it%20in%20pixel%20art.By%20PipocaDeSaltoDeviantArt:%20https://www.deviantart.com/pipocadesaltoOriginal%20Image%20Credits:%20The%20due%20credits%20of%20the%20original%20image%20go%20to%20Riukius!%20%E2%99%A5%EF%B8%8F%E2%99%A5%EF%B8%8FLINKS%20FOR%20PAGE:%20cdnb.artstation.com/p/assets/i%E2%80%A6riukius.artstation.comwww.reddit.com/user/Riukius" class="dropdown-item pinterest"><i aria-hidden="true" class="fa fa-pinterest"></i> <span class="text ml-2">Pinterest</span></a></div></div></div></div> <div class="tab-content pt-2 active" style="height: auto !important;"><div class="row" style="height: auto !important;"><div class="col-12 col-md-6 col-lg-12" style="height: auto !important;"><!----> <!----> <div class="share-list-wrapper mt-3"><div class="share-items-wrapper"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15&amp;title=White%20Diamond%20-%20Pixel%20Art" class="dropdown-item facebook"><i aria-hidden="true" class="fa fa-facebook"></i> <span class="text ml-2">Facebook</span></a> <a target="_blank" href="https://twitter.com/intent/tweet?text=White%20Diamond%20-%20Pixel%20Art%20https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15&amp;hashtags=pixilart,pixelart" class="dropdown-item twitter"><i aria-hidden="true" class="fa fa-twitter"></i> <span class="text ml-2">Twitter</span></a> <a target="_blank" href="https://www.reddit.com/submit?url=https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15" class="dropdown-item reddit"><i aria-hidden="true" class="fa fa-reddit-alien"></i> <span class="text ml-2">Reddit</span></a> <a target="_blank" href="http://pinterest.com/pin/create/bookmarklet/?media=https://art.pixilart.com/55339219773fca3.png&amp;url=https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15&amp;is_video=false&amp;description=This%20pixel%20art%20can%20be%20made%20out%20of%20wallpaper!%20A%20friend%20sent%20me%20the%20original%20image%20so%20I%20decided%20to%20do%20it%20in%20pixel%20art.By%20PipocaDeSaltoDeviantArt:%20https://www.deviantart.com/pipocadesaltoOriginal%20Image%20Credits:%20The%20due%20credits%20of%20the%20original%20image%20go%20to%20Riukius!%20%E2%99%A5%EF%B8%8F%E2%99%A5%EF%B8%8FLINKS%20FOR%20PAGE:%20cdnb.artstation.com/p/assets/i%E2%80%A6riukius.artstation.comwww.reddit.com/user/Riukius" class="dropdown-item pinterest"><i aria-hidden="true" class="fa fa-pinterest"></i> <span class="text ml-2">Pinterest</span></a></div></div> <!----> <div class="panel panel-ad-only mt-3 panel-gr" style="height: auto !important;"><div class="panel-header">
+		Advertisement
+
+		<span class="float-right"><i aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Ads help fund Pixilart&#39;s servers and features" class="ft ft-icon-help-circle"></i></span></div> <div class="panel-body text-center" style="height: auto !important;"><!----> <div class="ad-setting ad-placement-26" style="height: 100%;"><span><ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-3237025594850465" data-ad-slot="4663619223" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:408px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:408px;background-color:transparent;"><iframe width="408" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 408px; height: 280px; overflow: visible;" src="./ White Diamond _files/saved_resource.html"></iframe></ins></ins></ins></span></div></div></div> <div class="panel panel-gr mt-3"><div class="panel-body"><table class="table table-sm f-sm mb-0"><tbody><tr><td class="nbrt">Size</td> <td class="nbrt">91x160</td></tr> <tr><td>Edits</td> <td>1</td></tr> <!----> <!----> <!----> <tr><td>Colors</td> <td>
+															0
+														</td></tr></tbody></table> <div class="mt-2" style="display: none;"><span class="badge badge-light bg-white ftnm f-sm p-2" style="display: none;"><i aria-hidden="true" class="ft ft-icon-info mr-1"></i> Traced
+												</span></div></div></div> <div class="panel palette-panel art-colors-wrapper ofh panel-gr mt-3 of" style="display: none;"><div class="panel-header d-flex align-items-center justify-content-between">
+		Palette
+
+		<a href="https://www.pixilart.com/draw/?colors=" class="float-right ftnm f-sm color-gray">
+			Use Palette
+		</a></div> <div class="panel-body"><div class="d-flex palette-wrapper"></div> <div class="hidden"><canvas id="art-color-canvas"></canvas></div></div></div></div> <div class="col-12 col-md-6 col-lg-12"><div class="panel panel-gr mt-3 mt-md-3 mt-lg-3"><div class="panel-header nlh f-nm"><div class="media">
+			More from <a href="https://www.pixilart.com/pipocadesalto" class="pl-2"><span id="e29" class="username-com color-black"><span>PipocaDeSalto <span class="user-username color-gray">@PipocaDeSalto</span></span></span></a></div></div> <div class="panel-body row-pd"><div class="image-column-wrapper full d-flex fit-width-thumb"><div class="image-column half pr-2"><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/hakuna-matata-pixel-art-19e8d280cbbaa5e" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/19e8d280cbbaa5e.png" width="100%" height="auto" alt="Hakuna Matata - Pixel Art" data-height="1071" title="Hakuna Matata - Pixel Art" class="thumb-a-image"></a></div><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/rose-and-greg-pixel-art-ef4d1474fbb88e9" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/ef4d1474fbb88e9.png" width="auto" height="100%" alt="Rose and Greg - Pixel Art" data-height="964" title="Rose and Greg - Pixel Art" class="thumb-a-image"></a></div></div> <div class="image-column half"><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/any-malu-pixel-art-9e9a9380510c161" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/9e9a9380510c161.png" width="100%" height="auto" alt="Any Malu - Pixel Art" data-height="1200" title="Any Malu - Pixel Art" class="thumb-a-image"></a></div><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/steven-and-pearl-pixel-art-c9e1a39cb1719e5" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/947f51d6c426b91.png" width="100%" height="auto" alt="Steven and Pearl - Pixel Art" data-height="1197" title="Steven and Pearl - Pixel Art" class="thumb-a-image"></a></div></div></div> <div class="mb-2" style="display: none;"><div><span><div class="bar-loader"></div></span></div></div></div></div> <div class="panel panel-gr mt-3 mt-md-3 mt-lg-3"><div class="panel-header nlh f-nm"><div>
+			You may also like
+		</div></div> <div class="panel-body row-pd"><div class="image-column-wrapper full d-flex fit-width-thumb"><div class="image-column half pr-2"><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/farmers-hat-7f1ad1bce9f6938" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/7f1ad1bce9f6938.png" width="auto" height="100%" alt="Farmers Hat" data-height="1184" title="Farmers Hat" class="thumb-a-image"></a></div><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/kill-me-9af63bc820bfd35" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/9af63bc820bfd35.png" width="auto" height="100%" alt="Kill me" data-height="1400" title="Kill me" class="thumb-a-image"></a></div><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/burger-with-penis-in-it-b328d0e2ca7d823" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/b328d0e2ca7d823.png" width="auto" height="100%" alt="burger with penis in it" data-height="1200" title="burger with penis in it" class="thumb-a-image"></a></div></div> <div class="image-column half"><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/a-quick-art-0043095522404ff" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/0043095522404ff.png" width="auto" height="100%" alt="a quick art" data-height="840" title="a quick art" class="thumb-a-image"></a></div><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/here-it-is-632587a7a224ec7" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/632587a7a224ec7.png" width="auto" height="100%" alt="here it is" data-height="1200" title="here it is" class="thumb-a-image"></a></div><div class="upnf thumb-plain full hv op"><a href="https://www.pixilart.com/art/flower-7a833f793f01d36" class="full d-flex align-items-center justify-content-center"><img src="./ White Diamond _files/7a833f793f01d36.png" width="auto" height="100%" alt="flower" data-height="1200" title="flower" class="thumb-a-image"></a></div></div></div> <div class="mb-2" style="display: none;"><div><span><div class="bar-loader"></div></span></div></div></div></div></div></div></div> <div class="tab-content mt-3 "><div class="mb-4 text-center"><div class="alert alert-info">
+	Please <a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#">login</a> to view comments
+</div> <div style="display: none;">
+									Comments are locked
+								</div></div> <!----></div></div></div></div></div></div></div></div> <div class="d-block d-lg-none brt"><footer class="bg-white footer-sticky"><div class="main-section pt-5 pb-5"><div class="container"><div class="row"><div class="col-12 col-sm-6 col-md-8 col-lg-4 offset-sm-0 offset-md-2 offset-lg-0 pb-5 pb-md-0 mb-md-5 mb-lg-0 text-center text-lg-left"><a href="http://www.pixilart.com/" class="navbar-brand"><img src="./ White Diamond _files/logo_pixilart_simple_black.png" alt="Pixilart" class="pp"></a> <div class="mt-3 pr-0 pr-lg-5"><div class="f-sm color-pblue">Pixilart is a <a href="https://www.pixilart.com/help/parents">social platform for all ages</a>. Please be respectful and understand that children use this website.</div></div> <div class="mt-3 d-flex align-items-center justify-content-center justify-content-lg-start footer-social-icon-list"><a href="https://www.pixilart.com/pixilart" target="_blank" class="social-icon color-black mr-2"><i aria-hidden="true" class="fa fa-heart"></i></a> <a href="https://www.facebook.com/pixilart" target="_blank" class="social-icon color-black mr-2"><i aria-hidden="true" class="fa fa-facebook"></i></a> <a href="https://www.twitter.com/pixil_art" target="_blank" class="social-icon color-black mr-2"><i aria-hidden="true" class="fa fa-twitter"></i></a> <a href="https://www.instagram.com/pixilart" target="_blank" class="social-icon color-black mr-2"><i aria-hidden="true" class="fa fa-instagram"></i></a> <a href="https://www.youtube.com/c/pixilart" target="_blank" class="social-icon color-black"><i aria-hidden="true" class="fa fa-youtube-play"></i></a></div> <div class="mt-5"><a href="https://play.google.com/store/apps/details?id=com.pixilart.app&amp;hl=en" target="_blank" class="up"><img src="./ White Diamond _files/google-play-badge.png" width="120px" alt="google play store"></a> <a href="https://itunes.apple.com/us/app/pixilart/id1440580518" target="_blank" class="ml-2 up"><img src="./ White Diamond _files/badge-example-preferred.png" width="120px" alt="app store"></a></div></div> <div class="col-6 col-md-3 col-lg-2 mb-mt-lg"><h5 class="mb-3 f-ttu f-sm bld s">About</h5> <ul class="mb-0 list-unstyled foot-nav-list f-nm"><li><a href="https://www.pixilart.com/about">About</a></li> <li><a href="https://www.pixilart.com/help/contact">Contact Us</a></li> <li><a href="https://www.pixilart.com/terms">Terms of Use</a></li> <li><a href="https://www.pixilart.com/privacy">Privacy Policy</a></li> <li><a href="https://www.pixilart.com/help/parents?ref=footer">Teachers &amp; Parents</a></li></ul></div> <div class="col-6 col-md-3 col-lg-2 mb-mt-lg"><h5 class="mb-3 f-ttu f-sm bld s">Drawing</h5> <ul class="mb-0 list-unstyled foot-nav-list f-nm"><li><a href="https://www.pixilart.com/draw">Start Drawing</a></li> <li><a href="https://www.pixilart.com/features">Drawing Features</a></li> <li><a href="https://www.pixilart.com/online">Draw Online</a></li> <li><a href="https://www.pixilart.com/mobile">Mobile App</a></li></ul></div> <div class="col-6 col-md-3 col-lg-2 mb-mt-lg"><h5 class="mb-3 f-ttu f-sm bld s">Explore</h5> <ul class="mb-0 list-unstyled foot-nav-list f-nm"><li><a href="https://www.pixilart.com/gallery">Gallery</a></li> <li><a href="https://www.pixilart.com/digital">Uploaded Art</a></li> <li><a href="https://www.pixilart.com/contests">Contests</a></li> <li><a href="https://www.pixilart.com/groups">Groups</a></li> <li><a href="https://www.pixilart.com/forum">Forums</a></li> <li><a href="https://www.pixilart.com/tutorials">Tutorials</a></li></ul></div> <div class="col-6 col-md-3 col-lg-2 mb-mt-lg"><h5 class="mb-3 f-ttu f-sm bld s">Shop</h5> <ul class="mb-0 list-unstyled foot-nav-list f-nm"><li><a href="https://www.pixilart.com/shop">Pixilart Shop</a></li> <li><a href="https://www.pixilart.com/shop/status">Order Status</a></li> <li><a href="https://www.pixilart.com/shop/marketplace">Marketplace</a></li> <li><a href="https://www.pixilart.com/help/returns">Shipping &amp; Returns</a></li></ul></div></div></div></div> <div class="main-section pt-5 pb-5 brt"><div class="container"><div class="row "><div class="col-sm-12 col-md-6">
+© 2020 Pixilart, LLC - Coded with love in Fargo, ND<br></div> <div class="col-sm-12 col-md-6 text-right mb-text-left mb-mt"><a href="https://www.pixilart.com/privacy" class="color-black mr-3">Privacy Policy</a> <a href="https://www.pixilart.com/terms" class="color-black mr-3">Terms of Use</a> <a href="https://www.pixilart.com/about" class="color-black">About</a></div></div></div></div></footer> <div class="mobile-listing d-block d-lg-none"><div data-cookie-number="true" data-cookie-type="show" data-cookie="mobile-footer" data-cookie-value="1" class="mobile-fixed-footer ckie" style=""><div class="mobile-footer-wrapper d-flex justify-content-center f-nm"><div class="mobile-footer-content"><div class="d-flex align-items-center"><a href="https://www.pixilart.com/mobile" class="mp mobile-link">
+Get the mobile app!
+</a> <div data-parent=".mobile-fixed-footer" class="ckie-close mp"><i aria-hidden="true" class="ft ft-icon-x"></i></div></div></div></div></div></div></div></main> <!----> <!----> <div id="modal-report" tabindex="-1" role="dialog" aria-labelledby="report-modal" aria-hidden="true" class="modal fade report-modal"><div role="document" class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+				Report
+
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div class="modal-body"><label for="report-reason">Report Reason</label> <select id="report-reason" class="form-control lg mb-3"><option value="1">Spam or misleading</option> <option value="2">Inappropriate content</option> <option value="3">Violent or repulsive content</option> <option value="4">Hateful or abusive content</option> <option value="5">Cyberbullying or harassment</option> <option value="6">Copyright Infringement</option></select> <p class="mb-0">
+					Please block any users that you may find discouraging with your experiencing while using Pixilart. If you have any questions, please contact <a href="mailto:support@pixilart.com">support@pixilart.com</a>.
+				</p></div> <div class="modal-footer"><button type="button" class="btn btn-light">Cancel</button> <button type="button" class="btn btn-primary"><div><span><span>
+			Send Report
+
+			<!----></span></span></div></button></div></div></div></div> <div id="modal-image" tabindex="-1" role="dialog" aria-labelledby="image-modal" aria-hidden="true" class="modal image-modal"><div class="modal-mobile-close"><button class="btn btn-transparent"><i aria-hidden="true" class="ft ft-icon-x"></i></button></div> <div role="document" class="modal-dialog modal-dialog-centered "><div class="modal-content"><div class="modal-body"><!----></div></div></div></div> <div id="modal-likes" tabindex="-1" role="dialog" aria-labelledby="likes-modal" aria-hidden="true" class="modal fade"><div role="document" class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header">
+				Likes
+
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div infinite-scroll-disabled="busy" infinite-scroll-distance="20" class="modal-body of"><!----> <div style="display: none;"><div class="mt-4 mb-4 mb-md-0"><span><div class="bar-loader"></div></span></div></div></div> <div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-light bt-light-dk">Close</button></div></div></div></div> <div id="modal-replay" tabindex="-1" role="dialog" aria-labelledby="replay-modal" aria-hidden="true" class="modal fade replay-modal"><div role="document" class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header d-block d-lg-none">
+				Replay
+
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div class="modal-body"><div class="loading-takover abs"><div><span><div><i aria-hidden="true" class="ft ft-icon-loader spin color-black"></i></div></span></div></div> <img width="100%" alt="art replay"></div> <div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-light bt-light-dk">Close</button> <a href="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15#" class="btn btn-primary">Download</a></div></div></div></div> <div id="modal-auth" tabindex="-1" role="dialog" aria-labelledby="art-modal" aria-hidden="true" class="modal fade auth-modal"><div class="modal-mobile-close"><button class="btn btn-transparent"><i aria-hidden="true" class="ft ft-icon-x"></i></button></div> <div role="document" class="modal-dialog modal-dialog-centered auth-modal"><div class="modal-content"><div class="modal-body"><div class="auth-container lbrd my-4 my-lg-0 py-4 px-4 px-lg-0 p-lg-4 bg-white el-box"><div class="row"><div class="col-sm-12 col-md-12 mb-3"><div class="text-center mb-3"><a href="https://www.pixilart.com/"><img src="./ White Diamond _files/logo-plain.png" alt="Pixilart" height="30px" class="mb-3 pp"></a> <h3 class="mb-1">Create an account</h3> <p class="mb-0 f-nm">Become part of the largest pixel art community</p></div> <!----> <!----></div></div> <div class="row text-center"><div class="col-sm-12 col-md-12 mb-2">
+			Connect with
+		</div> <div class="col-sm-12 col-md-12"><div class="row d-lg-flex mx-lg-0 align-items-center"><div class="col-12 col-lg-4 px-lg-0"><a href="https://www.pixilart.com/login/facebook" class="btn btn-social btn-facebook full"><i aria-hidden="true" class="fa fa-facebook mr-2"></i> Facebook
+					</a></div> <div class="col-12 col-lg-4 my-2 my-lg-0 px-lg-2"><a href="https://www.pixilart.com/login/twitter" class="btn btn-social btn-twitter full"><i aria-hidden="true" class="fa fa-twitter mr-2"></i>  Twitter
+					</a></div> <div class="col-12 col-lg-4 px-lg-0"><a href="https://www.pixilart.com/login/google" class="btn btn-social btn-google full"><i aria-hidden="true" class="fa fa-google mr-2"></i>  Google
+					</a></div></div></div> <div class="col-sm-12 col-md-12 mt-3"><div class="text-cross"><span class="text-cross-text">
+					or
+				</span></div></div></div> <div class="row mt-3"><div class="col-sm-12 col-md-12"><form action="https://www.pixilart.com/art/white-diamond-pixel-art-cf41c63bd4fff15" method="get"><div><div class="form-group"><label for="auth-email-signup">E-mail</label> <input type="email" id="auth-email-signup" required="required" placeholder="E-mail" class="form-control lg"> <small id="e-mail-helper" class="form-text text-muted">We'll never share your e-mail with anyone else.</small></div> <div class="form-check mb-3"><input type="checkbox" id="agree-check" class="form-check-input"> <label required="required" for="agree-check" class="form-check-label f-sm">I agree to Pixilart's <a href="https://www.pixilart.com/terms" target="_blank" class="color-blue">terms of use</a></label></div> <div data-sitekey="6LdV7k0UAAAAAMHw3GJqQv6JxcS7lgMZjPmSaW8B" class="g-recaptcha" style="display: none;"></div></div> <button type="submit" class="btn btn-primary f-lg full mt-3"><div><span><span>
+			Create account
+
+			<!----></span></span></div></button></form></div></div> <div class="auth-footer f-nm pt-3 text-center"><div class="full">
+			Already a member? <a href="https://www.pixilart.com/login">Sign in</a></div></div></div></div></div></div></div> <div class="card user-card-wrapper bottom left" style="display: none;"><!----> <div class="card-body"><div><span><div class="bar-loader"></div></span></div></div></div></div>
+
+<script>
+ if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js?v3', {
+    	scope: '.'
+    })
+    .then(function(reg) {
+      	console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+     	console.warn('Error whilst registering service worker', err);
+    });
+ }
+</script>
+
+<form id="external-link-form" action="https://www.pixilart.com/url" method="POST" target="_blank" style="display: none;">
+<input id="external-url" value="" name="url" type="hidden">
+<input type="hidden" name="_token" value="lWVDo3ErpSuzViRA9pdAuYKDWaJXaf7uXmd5lxub"> </form>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6eae353a0d","applicationID":"20127417","transactionName":"ZlxSZkJWWhdZAEJZWV8WcVFEXlsKFyJGQGp5TURCbHRbCkwRWVxaVEtDbmdSVjh5EUJzWV9NQl1cW1EWeApYVFNJ","queueTime":0,"applicationTime":64,"atts":"ShtREApMSRk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<style>.image-modal .modal-content.active { height: 756px; }</style><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" src="./ White Diamond _files/saved_resource(1).html"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_4277759645751" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./ White Diamond _files/saved_resource(2).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./ White Diamond _files/zrt_lookup.html" data-ad-client="ca-pub-3237025594850465" style="display: none;"></iframe></html>
