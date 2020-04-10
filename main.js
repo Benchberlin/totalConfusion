@@ -8,6 +8,7 @@ let Fsmashed;
 let card1;
 let card2;
 let card3;
+let card4;
 let cardArr = [];
 let rule;
 let condition;
@@ -29,9 +30,11 @@ function preload() {
   card1 = loadImage("assets/pixil-frame-0 (2).png");
   card2 = loadImage("assets/pixil-frame-0 (3).png");
   card3 = loadImage("assets/pixil-frame-0 (4).png");
+  card4 = loadImage("assets/greencard-bluetext.png");
   cardArr.push(card1);
   cardArr.push(card2);
   cardArr.push(card3);
+  cardArr.push(card4);
   explosion = createImg("assets/pixel-explotion.gif").hide();
 }
 
@@ -146,6 +149,18 @@ function draw() {
       f.img === card3 &&
       condition.cardCondition === "By Text!" &&
       rule.colorRule === "Get the Yellow Ones!"
+    ) {
+      score();
+    } else if (
+      f.img === card4 &&
+      condition.cardCondition === "By Text!" &&
+      rule.colorRule === "Get the Blue Ones!"
+    ) {
+      score();
+    } else if (
+      f.img === card4 &&
+      condition.cardCondition === "By Card!" &&
+      rule.colorRule === "Get the Green Ones!"
     ) {
       score();
     } else {
