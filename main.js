@@ -16,11 +16,13 @@ let explosion;
 let velocity = 0;
 var x1 = 0;
 var x2;
+let song;
 
 var scrollSpeed = 5;
 
 function preload() {
-  Bimg = loadImage("./assets/bluesky_2.png");
+  song = loadSound("assets/Chiptronical.mp3");
+  Bimg = loadImage("assets/bluesky_2.png");
   Himg = loadImage("assets/hand.png");
   Fimg = loadImage("assets/froggy.jpg");
   Fsmashed = loadImage("assets/froggySmashed.jpg");
@@ -41,37 +43,37 @@ function setup() {
   counter = new Counter();
   rule = new Rule();
   condition = new Condition();
+  song.setVolume(0.05);
+  song.play();
 }
 
 function keyPressed() {
   if (key == "j") {
     hand.jump();
-    console.log("jump") ;
+    console.log("jump");
   }
 }
 
 function draw() {
   clear();
-   
+
   image(Bimg, x2, 0, 510, 500);
   image(Bimg, x1, 0, 510, 500);
 
-x1 += scrollSpeed;
- x2 += scrollSpeed;
+  x1 -= scrollSpeed;
+  x2 -= scrollSpeed;
 
-  if (x1 > width) {
-    x1 =- width;
+  if (x1 < -width) {
+    x1 = width;
   }
-  if (x2 >width) {
-    x2 =- width;
+  if (x2 < -width) {
+    x2 = width;
   }
-
-
 
   if (frameCount % 60 === 0) {
     frogs.push(
       new Frog(
-        width,
+        0,
         80,
         cardArr[Math.floor(Math.random() * cardArr.length)],
         velocity

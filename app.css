@@ -15,6 +15,12 @@ h1 {
   max-width: 600px;
 }
 
+img {
+  height: 150px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 #score {
   color: #f6b93b;
 }
@@ -24,9 +30,16 @@ div {
 }
 
 #score-board {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.box h3 {
+  margin-left: 30px;
+}
 
 body {
   background-color: #639dff;
@@ -60,6 +73,6 @@ body {
 }
 
 h3 {
-    font-size: medium;
-    color: blue
+  font-size: medium;
+  color: blue;
 }

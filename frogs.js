@@ -17,6 +17,6 @@ class Frog {
   }
 
   move() {
-    this.y = this.y - 5 - this.velocity;
+    this.y = this.y + 5 + this.velocity;
   }
 }

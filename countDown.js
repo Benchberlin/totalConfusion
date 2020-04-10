@@ -1,7 +1,7 @@
 class Clock {
   constructor(img) {
     this.x = 20;
-    this.y = 350;
+    this.y = 250;
     this.t = 60;
     this.img = loadImage("./assets/pixel-explotion.gif");
   }
