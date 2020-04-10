@@ -1,3 +1,4 @@
+let Bimg;
 let hand;
 let Himg;
 let Fimg;
@@ -12,45 +13,68 @@ let rule;
 let condition;
 let clock;
 let explosion;
+let velocity = 0;
+var x1 = 0;
+var x2;
+
+var scrollSpeed = 5;
 
 function preload() {
+  Bimg = loadImage("./assets/bluesky_2.png");
   Himg = loadImage("assets/hand.png");
   Fimg = loadImage("assets/froggy.jpg");
   Fsmashed = loadImage("assets/froggySmashed.jpg");
-  card1 = loadImage("assets/blueCardGreenTex.png");
-  card2 = loadImage("assets/yellowCardRedTex.png");
-  card3 = loadImage("assets/redCardYellowText.png");
+  card1 = loadImage("assets/pixil-frame-0 (2).png");
+  card2 = loadImage("assets/pixil-frame-0 (3).png");
+  card3 = loadImage("assets/pixil-frame-0 (4).png");
   cardArr.push(card1);
   cardArr.push(card2);
   cardArr.push(card3);
-  explosion = loadImage("assets/pixel-explotion.gif");
+  explosion = createImg("assets/pixel-explotion.gif").hide();
 }
 
 function setup() {
-  createCanvas(400, 600);
-  background(150, 100, 200);
+  clock = new Clock(explosion);
+  createCanvas(500, 500);
+  x2 = width;
   hand = new Hand();
   counter = new Counter();
   rule = new Rule();
   condition = new Condition();
-  clock = new Clock(explosion);
 }
 
 function keyPressed() {
   if (key == "j") {
     hand.jump();
-    console.log("pressing");
+    console.log("jump") ;
   }
 }
 
 function draw() {
   clear();
+   image(Bimg, x1, 0, 510, 500);
+  image(Bimg, x2, 0, 510, 500);
 
-  clock.draw();
+x1 -= scrollSpeed;
+ x2 -= scrollSpeed;
+
+  if (x1 < -width) {
+    x1 = width;
+  }
+  if (x2 < -width) {
+    x2 = width;
+  }
+
+
 
   if (frameCount % 60 === 0) {
     frogs.push(
-      new Frog(width, 80, cardArr[Math.floor(Math.random() * cardArr.length)])
+      new Frog(
+        width,
+        80,
+        cardArr[Math.floor(Math.random() * cardArr.length)],
+        velocity
+      )
     );
   }
 
@@ -66,7 +90,6 @@ function draw() {
 
     function score() {
       if (hand.hits(f)) {
-        console.log("click");
         counter.score++;
         f.hasBeenTouched = true;
       }
@@ -74,7 +97,6 @@ function draw() {
 
     function scoreMinus() {
       if (hand.hits(f)) {
-        console.log("click");
         counter.score--;
         f.hasBeenTouched = true;
       }
@@ -87,13 +109,11 @@ function draw() {
     console.log(rule.colorRule); */
     //Markus;
 
-    console.log(f.img === card1, f.img === card2);
     if (
       f.img === card1 &&
       condition.cardCondition === "By Card!" &&
       rule.colorRule === "Get the Blue Ones!"
     ) {
-      console.log("HappyBirthday55");
       score();
     } else if (
       f.img === card2 &&
@@ -136,4 +156,31 @@ function draw() {
   condition.draw();
 
   counter.draw();
+  clock.draw();
+
+  document.querySelector("body > div.score-board").innerText = counter.score;
+
+  document.querySelector("#rule1").innerHTML = rule.colorRule;
+
+  document.querySelector("#rule2").innerHTML = condition.cardCondition;
 }
+
+/* document.querySelector("#reset").addEventListener("click", () => {
+  location.reload();
+}); 
+
+document.querySelector("#mode_hard").addEventListener("click", () => {
+  velocity = 5;
+  frogs.forEach((frog) => {
+    frog.velocity = 5;
+  });
+});
+
+document.querySelector("#mode_easy").addEventListener("click", () => {
+  velocity = velocity / 1.5;
+  frogs.forEach((frog) => {
+    frog.velocity = velocity / 2;
+  });
+});
+
+*/

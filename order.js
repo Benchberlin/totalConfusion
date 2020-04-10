@@ -13,6 +13,6 @@ class Rule {
     if (frameCount % 180 === 0) {
       this.colorRule = this.rules[Math.floor(random(3))];
     }
-    text(this.colorRule, 20, 55);
+    // text(this.colorRule, 20, 55);
   }
 }

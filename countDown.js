@@ -3,7 +3,7 @@ class Clock {
     this.x = 20;
     this.y = 350;
     this.t = 60;
-    this.img = img;
+    this.img = loadImage("./assets/pixel-explotion.gif");
   }
 
   draw() {
@@ -11,10 +11,9 @@ class Clock {
       this.t--;
     }
     text(this.t, this.y, this.x, 100, 100);
-    if (this.t === 0) {
+    if (this.t <= 0) {
       console.log("Game Over");
-      image(this.img, 50, 50);
-      noLoop();
+      image(this.img, 0, 0, width, height);
     }
   }
 }

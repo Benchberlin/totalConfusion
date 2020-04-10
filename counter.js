@@ -5,12 +5,10 @@ class Counter {
     this.score = 0;
   }
 
-  draw () {
+  draw() {
+    let s = `Score: ${this.score}`;
 
-    let s = `Score: ${this.score}` ;
-  
-    text(s, this.y, this.x, 100, 100); // Text wraps within text box
-
-
+    // text(s, this.y, this.x, 100, 100); // Text wraps within text box
+    fill(96, 73, 23);
   }
 }
