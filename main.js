@@ -46,12 +46,12 @@ function setup() {
   counter = new Counter();
   rule = new Rule();
   condition = new Condition();
-  song.setVolume(0.05);
+  song.setVolume(0.02);
   song.play();
 }
 
 function keyPressed() {
-  if (key == "j") {
+  if (keyCode == UP_ARROW) {
     hand.jump();
     console.log("jump");
   }
@@ -59,6 +59,16 @@ function keyPressed() {
 
 function draw() {
   clear();
+
+  if (keyIsDown(RIGHT_ARROW)) {
+    hand.moveRight();
+    console.log("right");
+  }
+
+  if (keyIsDown(LEFT_ARROW)) {
+    hand.moveLeft();
+    console.log("left");
+  }
 
   image(Bimg, x2, 0, 510, 500);
   image(Bimg, x1, 0, 510, 500);
@@ -117,50 +127,50 @@ function draw() {
 
     if (
       f.img === card1 &&
-      condition.cardCondition === "By Card!" &&
-      rule.colorRule === "Get the Blue Ones!"
+      condition.cardCondition === "Card!" &&
+      rule.colorRule === "Get the Blue"
     ) {
       score();
     } else if (
       f.img === card2 &&
-      condition.cardCondition === "By Card!" &&
-      rule.colorRule === "Get the Yellow Ones!"
+      condition.cardCondition === "Card!" &&
+      rule.colorRule === "Get the Yellow"
     ) {
       score();
     } else if (
       f.img === card3 &&
-      condition.cardCondition === "By Card!" &&
-      rule.colorRule === "Get the Green Ones!"
+      condition.cardCondition === "Card!" &&
+      rule.colorRule === "Get the Green"
     ) {
       score();
     } else if (
       f.img === card1 &&
-      condition.cardCondition === "By Text!" &&
-      rule.colorRule === "Get the Green Ones!"
+      condition.cardCondition === "Text!" &&
+      rule.colorRule === "Get the Green"
     ) {
       score();
     } else if (
       f.img === card2 &&
-      condition.cardCondition === "By Text!" &&
-      rule.colorRule === "Get the Red Ones!"
+      condition.cardCondition === "Text!" &&
+      rule.colorRule === "Get the Red"
     ) {
       score();
     } else if (
       f.img === card3 &&
-      condition.cardCondition === "By Text!" &&
-      rule.colorRule === "Get the Yellow Ones!"
+      condition.cardCondition === "Text!" &&
+      rule.colorRule === "Get the Yellow"
     ) {
       score();
     } else if (
       f.img === card4 &&
-      condition.cardCondition === "By Text!" &&
-      rule.colorRule === "Get the Blue Ones!"
+      condition.cardCondition === "Text!" &&
+      rule.colorRule === "Get the Blue"
     ) {
       score();
     } else if (
       f.img === card4 &&
-      condition.cardCondition === "By Card!" &&
-      rule.colorRule === "Get the Green Ones!"
+      condition.cardCondition === "Card!" &&
+      rule.colorRule === "Get the Green"
     ) {
       score();
     } else {

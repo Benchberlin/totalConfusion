@@ -18,6 +18,14 @@ class Hand {
     this.y = constrain(this.y, 0, 350);
   }
 
+  moveLeft() {
+    this.x -= 10;
+  }
+
+  moveRight() {
+    this.x += 10;
+  }
+
   hits(frog) {
     if (frog.hasBeenTouched === true) {
       return false;
@@ -28,5 +36,11 @@ class Hand {
 
   draw() {
     image(Himg, this.x, this.y, 50, 50);
+
+
+   
+
+
+
   }
 }

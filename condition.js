@@ -3,7 +3,7 @@ class Condition {
 
     this.cardCondition = '';
 
-    this.conditions = ["By Card!", "By Text!"];
+    this.conditions = ["Card!", "Text!"];
   }
 
   draw() {

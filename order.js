@@ -2,11 +2,7 @@ class Rule {
   constructor() {
     this.colorRule = "";
 
-    this.rules = [
-      "Get the Blue Ones!",
-      "Get the Green Ones!",
-      "Get the Yellow Ones!",
-    ];
+    this.rules = ["Get the Blue", "Get the Green", "Get the Yellow"];
   }
 
   draw() {
