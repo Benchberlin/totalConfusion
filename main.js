@@ -52,17 +52,18 @@ function keyPressed() {
 
 function draw() {
   clear();
-   image(Bimg, x1, 0, 510, 500);
+   
   image(Bimg, x2, 0, 510, 500);
+  image(Bimg, x1, 0, 510, 500);
 
-x1 -= scrollSpeed;
- x2 -= scrollSpeed;
+x1 += scrollSpeed;
+ x2 += scrollSpeed;
 
-  if (x1 < -width) {
-    x1 = width;
+  if (x1 > width) {
+    x1 =- width;
   }
-  if (x2 < -width) {
-    x2 = width;
+  if (x2 >width) {
+    x2 =- width;
   }
 
 
