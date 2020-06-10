@@ -70,6 +70,12 @@ function draw() {
     console.log("left");
   }
 
+  if (keyIsDown(32)) {
+    hand.getSmall();
+  } else {
+    hand.getNormal();
+  }
+
   image(Bimg, x2, 0, 510, 500);
   image(Bimg, x1, 0, 510, 500);
 
@@ -105,8 +111,9 @@ function draw() {
     // -- Score when Hand collides onces ------
 
     function score() {
-      if (hand.hits(f)) {
+      if (hand.hits(f) && hand.height == 35) {
         counter.score++;
+        f.x = 500 ;
         f.hasBeenTouched = true;
       }
     }

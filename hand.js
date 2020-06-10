@@ -4,12 +4,25 @@ class Hand {
     this.y = 350;
     this.vy = 0;
     this.gravity = 0.5;
+    this.height = 50;
+    this.width = 50;
   }
 
   jump() {
     if (this.y == 350) {
       this.vy = -18;
     }
+  }
+
+  getSmall() {
+    this.height = 35;
+    this.width = 35;
+  }
+
+
+  getNormal() {
+    this.height = 50;
+    this.width = 50;
   }
 
   move() {
@@ -31,16 +44,19 @@ class Hand {
       return false;
     }
 
-    return collideRectRect(this.y, this.x, 55, 55, frog.x, frog.y, 50, 30);
+    return collideRectRect(
+      this.y,
+      this.x,
+      55,
+      55,
+      frog.x,
+      frog.y,
+      this.height,
+      this.width
+    );
   }
 
   draw() {
-    image(Himg, this.x, this.y, 50, 50);
-
-
-   
-
-
-
+    image(Himg, this.x, this.y, this.height, this.width);
   }
 }
